@@ -71,7 +71,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up sm:text-xl">
               Tiqni helps startups, SMEs, and enterprises design, build, and scale digital
-              products — engineered by senior developers, delivered with transparency.
+              products, engineered by senior developers, delivered with transparency.
             </p>
             <div className="mt-9 flex flex-col gap-3 animate-fade-up sm:flex-row">
               <Button href="/contact">Book a Free Consultation</Button>
@@ -95,7 +95,7 @@ export default function HomePage() {
           <SectionHead
             eyebrow="Why it matters"
             title="A technology partner, not just a vendor."
-            sub="Most software fails slowly — through shortcuts, unclear scope, and code no one wants to maintain. We work the other way. Every project is scoped clearly, built to last, and owned end to end by senior engineers who care how it ages."
+            sub="Most software fails slowly, through shortcuts, unclear scope, and code no one wants to maintain. We work the other way. Every project is scoped clearly, built to last, and owned end to end by senior engineers who care how it ages."
           />
           <div className="grid gap-5 sm:grid-cols-1">
             {pillars.map((p, i) => (
@@ -119,7 +119,7 @@ export default function HomePage() {
       <Section tone="mist">
         <SectionHead
           eyebrow="What we do"
-          title="From idea to production — and everything after."
+          title="From idea to production, and everything after."
           sub="End-to-end product engineering across mobile, web, backend, and cloud."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -209,7 +209,7 @@ export default function HomePage() {
       <Section tone="mist">
         <SectionHead
           eyebrow="Our stack"
-          title="Proven tools, chosen for your project — not our convenience."
+          title="Proven tools, chosen for your project, not our convenience."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
           {techStack.map((group, i) => (
@@ -331,7 +331,7 @@ export function ContactCta() {
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-300">
             Book a free consultation. We&apos;ll discuss your goals and give you a clear plan,
-            timeline, and estimate — no obligation.
+            timeline, and estimate, no obligation.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button href="/contact">Book a Free Consultation</Button>

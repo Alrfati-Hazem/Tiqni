@@ -25,9 +25,9 @@ export function ContactForm() {
         <span className="grid h-14 w-14 place-items-center rounded-full bg-brand-600/10 text-brand-600">
           <CheckCircle2 className="h-7 w-7" aria-hidden="true" />
         </span>
-        <h3 className="font-display text-xl font-semibold text-slate-900">Thanks — message received.</h3>
+        <h3 className="font-display text-xl font-semibold text-slate-900">Thanks, message received.</h3>
         <p className="max-w-sm text-slate-500">
-          We&apos;ll get back to you within one business day. (This is a demo form — connect it to
+          We&apos;ll get back to you within one business day. (This is a demo form, connect it to
           your email service or an API route to go live.)
         </p>
       </div>

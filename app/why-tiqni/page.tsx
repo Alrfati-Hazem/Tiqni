@@ -42,7 +42,7 @@ export default function WhyTiqniPage() {
               Senior engineering, without the agency overhead.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              You get the people who actually build the software — not a sales layer between you
+              You get the people who actually build the software, not a sales layer between you
               and the code. Here&apos;s what that means in practice.
             </p>
           </Reveal>

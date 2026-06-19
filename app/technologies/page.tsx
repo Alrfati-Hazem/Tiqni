@@ -8,7 +8,7 @@ import { techStack } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Our Technology Stack",
   description:
-    "Flutter, React, Next.js, Node.js, NestJS, Laravel, ASP.NET, PostgreSQL, AWS, Azure, and more — the proven tools Tiqni builds with.",
+    "Flutter, React, Next.js, Node.js, NestJS, Laravel, ASP.NET, PostgreSQL, AWS, Azure, and more. The proven tools Tiqni builds with.",
 };
 
 const groupIcons: Record<string, React.ElementType> = {
@@ -30,7 +30,7 @@ export default function TechnologiesPage() {
               Proven tools, chosen for your project.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
-              We pick technologies for fit, not fashion — modern, well-supported, and right for
+              We pick technologies for fit, not fashion. Modern, well-supported, and right for
               what you&apos;re building. Here&apos;s the stack we work in every day.
             </p>
           </Reveal>
@@ -41,7 +41,7 @@ export default function TechnologiesPage() {
         <SectionHead
           eyebrow="Our stack"
           title="From front end to infrastructure."
-          sub="Full coverage across the product lifecycle — mobile and web front ends, backend services, data, cloud, and the tooling that keeps delivery smooth."
+          sub="Full coverage across the product lifecycle: mobile and web front ends, backend services, data, cloud, and the tooling that keeps delivery smooth."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {techStack.map((group, i) => {
@@ -81,12 +81,12 @@ export default function TechnologiesPage() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-slate-600">
             <p>
               Every project starts with the problem, not the stack. We weigh your timeline, team,
-              budget, and how the product needs to scale — then choose technologies that keep it
+              budget, and how the product needs to scale, then choose technologies that keep it
               fast to build now and cheap to maintain later.
             </p>
             <p>
               We favor mature, well-documented tools with strong communities, so your software
-              stays supportable for years — and any developer can pick it up, not just us.
+              stays supportable for years, and any developer can pick it up, not just us.
             </p>
           </Reveal>
         </div>

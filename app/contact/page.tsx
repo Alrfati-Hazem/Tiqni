@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Tiqni — Book a Free Consultation",
+  title: "Contact Tiqni · Book a Free Consultation",
   description:
     "Tell us about your project. Book a free consultation with Tiqni's founders and get a clear plan, timeline, and estimate.",
 };
@@ -28,7 +28,7 @@ export default function ContactPage() {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
               Tell us about your project. We&apos;ll get back within one business day with next
-              steps — usually a free consultation to map out scope, timeline, and a clear estimate.
+              steps, usually a free consultation to map out scope, timeline, and a clear estimate.
             </p>
           </Reveal>
         </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
             <div className="card bg-ink-900 text-slate-300">
               <h3 className="font-display text-lg font-semibold text-white">Prefer to talk first?</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                Book a free 30-minute consultation. No obligation, no sales script — just a clear
+                Book a free 30-minute consultation. No obligation, no sales script, just a clear
                 conversation about what you&apos;re building.
               </p>
               <a

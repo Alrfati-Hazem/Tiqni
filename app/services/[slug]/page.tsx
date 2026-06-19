@@ -74,7 +74,7 @@ export default async function ServiceDetailPage({
               ))}
             </ul>
             <p className="mt-8 leading-relaxed text-slate-600">
-              Every engagement is led by senior engineers and follows our transparent process —
+              Every engagement is led by senior engineers and follows our transparent process:
               clear scope, regular updates, and quality you can rely on. Detailed{" "}
               {service.title.toLowerCase()} case material is on its way; for now, the fastest way to
               see if we&apos;re a fit is a quick conversation.
@@ -88,7 +88,7 @@ export default async function ServiceDetailPage({
               </h3>
               <p className="mt-2 text-slate-500">
                 Book a free consultation and we&apos;ll map out scope, timeline, and a clear
-                estimate — no obligation.
+                estimate, no obligation.
               </p>
               <div className="mt-6">
                 <Button href="/contact" className="w-full">Book a Free Consultation</Button>

@@ -11,7 +11,7 @@ import { industries } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Industries We Serve",
   description:
-    "Healthcare, logistics, education, finance, e-commerce, hospitality, HR, government, construction, real estate — Tiqni builds software across the sectors that run on it.",
+    "Healthcare, logistics, education, finance, e-commerce, hospitality, HR, government, construction, real estate, Tiqni builds software across the sectors that run on it.",
 };
 
 const meta: Record<string, { icon: React.ElementType; blurb: string }> = {
@@ -39,7 +39,7 @@ export default function IndustriesPage() {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
               We&apos;ve built production software across many industries. We learn how your
-              business actually works before we write a line of code — so the software fits the
+              business actually works before we write a line of code, so the software fits the
               way you operate, not the other way around.
             </p>
           </Reveal>
@@ -80,11 +80,11 @@ export default function IndustriesPage() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-slate-600">
             <p>
               Good engineering isn&apos;t industry-specific. Clean architecture, secure data, clear
-              UX, and reliable delivery matter everywhere — and they&apos;re what we bring to every
+              UX, and reliable delivery matter everywhere, and they&apos;re what we bring to every
               project, whatever the sector.
             </p>
             <p>
-              If your industry isn&apos;t listed, that&apos;s not a gap — it&apos;s a conversation.
+              If your industry isn&apos;t listed, that&apos;s not a gap, it&apos;s a conversation.
               Tell us what you&apos;re building and we&apos;ll tell you exactly how we&apos;d approach it.
             </p>
           </Reveal>

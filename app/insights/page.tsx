@@ -3,7 +3,7 @@ import { ComingSoon } from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
   title: "Insights",
-  description: "Articles on mobile, Flutter, software engineering, AI, cloud, backend, web development, and business technology — from Tiqni.",
+  description: "Articles on mobile, Flutter, software engineering, AI, cloud, backend, web development, and business technology, from Tiqni.",
 };
 
 export default function Page() {

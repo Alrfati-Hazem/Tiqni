@@ -11,12 +11,12 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="Tiqni — home"
+      aria-label="Tiqni, home"
       className={`inline-flex items-center gap-2.5 ${className}`}
     >
       <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient shadow-soft">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          {/* Geometric T forming a checkmark/anchor — "certainty confirmed" */}
+          {/* Geometric T forming a checkmark/anchor, "certainty confirmed" */}
           <path
             d="M4 5h16M12 5v9.5"
             stroke="white"

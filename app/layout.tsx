@@ -9,8 +9,8 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: "Tiqni — Software Development & Technology Consultancy",
-    template: "%s — Tiqni",
+    default: "Tiqni · Software Development & Technology Consultancy",
+    template: "%s · Tiqni",
   },
   description: site.description,
   keywords: [
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Tiqni",
-    title: "Tiqni — Software Development & Technology Consultancy",
+    title: "Tiqni · Software Development & Technology Consultancy",
     description: site.description,
     url: site.domain,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tiqni — Software Development & Technology Consultancy",
+    title: "Tiqni · Software Development & Technology Consultancy",
     description: site.description,
   },
 };

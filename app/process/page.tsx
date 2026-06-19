@@ -10,7 +10,7 @@ import { processSteps } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Our Development Process",
   description:
-    "Discovery, planning, UI/UX, development, testing, deployment, support — a transparent, step-by-step process you can follow from idea to launch and beyond.",
+    "Discovery, planning, UI/UX, development, testing, deployment, support, a transparent, step-by-step process you can follow from idea to launch and beyond.",
 };
 
 const stepIcons: Record<string, React.ElementType> = {
@@ -24,13 +24,13 @@ const stepIcons: Record<string, React.ElementType> = {
 };
 
 const detail: Record<string, string> = {
-  Discovery: "We start with your business — goals, users, constraints, and what success looks like. No assumptions, no jumping to code.",
+  Discovery: "We start with your business, goals, users, constraints, and what success looks like. No assumptions, no jumping to code.",
   Planning: "You get scope, architecture, timeline, and a written estimate before we build. Decisions are documented so there are no surprises later.",
   "UI/UX": "We design the flows and screens, and you approve them before development starts. Building the right thing beats building fast.",
   Development: "We build in short increments you can see and test. You watch the product take shape instead of waiting for a big reveal.",
-  Testing: "Every feature is checked before it ships — functionality, edge cases, and performance — so quality is built in, not bolted on.",
+  Testing: "Every feature is checked before it ships, functionality, edge cases, and performance, so quality is built in, not bolted on.",
   Deployment: "We release safely, with monitoring and rollback in place. Going live is routine, not a risk.",
-  Support: "Software is never “done.” We maintain, monitor, and improve what we build — long after launch.",
+  Support: "Software is never “done.” We maintain, monitor, and improve what we build, long after launch.",
 };
 
 export default function ProcessPage() {
@@ -55,7 +55,7 @@ export default function ProcessPage() {
         <SectionHead
           eyebrow="How we work"
           title="Seven stages, fully transparent."
-          sub="Each stage has a clear output you can see and sign off on — so the project stays predictable from idea to support."
+          sub="Each stage has a clear output you can see and sign off on, so the project stays predictable from idea to support."
         />
         <ol className="mt-14 space-y-6">
           {processSteps.map((step, i) => {
@@ -92,7 +92,7 @@ export default function ProcessPage() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-slate-600">
             <p>
               We work in short cycles with regular check-ins, so you can steer the project as it
-              evolves instead of finding out at the end. Priorities can shift — the transparency
+              evolves instead of finding out at the end. Priorities can shift, the transparency
               doesn&apos;t.
             </p>
             <p>

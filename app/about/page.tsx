@@ -6,7 +6,7 @@ import { ContactCta } from "../page";
 import { values, founders } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Tiqni — Senior Engineers, Long-Term Partners",
+  title: "About Tiqni · Senior Engineers, Long-Term Partners",
   description:
     "Meet Tiqni: a software consultancy founded by senior engineers. Our mission, values, and the founders behind reliable, high-quality software.",
 };
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <p className="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
               Tiqni is a software development and technology consultancy. We
               help businesses design, build, and scale digital products through
-              modern engineering — and we stick around to keep them healthy.
+              modern engineering, and we stick around to keep them healthy.
             </p>
           </Reveal>
         </div>
@@ -38,13 +38,13 @@ export default function AboutPage() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-slate-600">
             <p>
               We spent years building production software inside established
-              companies — apps and systems used by thousands of people. We saw
+              companies, apps and systems used by thousands of people. We saw
               what makes software succeed: senior people who care, clear
               communication, and a commitment to quality over shortcuts.
             </p>
             <p>
               We also saw how often clients get the opposite. Tiqni is our
-              answer — a consultancy where senior engineering and honest
+              answer, a consultancy where senior engineering and honest
               partnership are the default, not the upsell.
             </p>
             <p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
               <span className="font-medium text-slate-900">
                 certainty and trust
               </span>{" "}
-              — exactly what we want every client to feel.
+             , exactly what we want every client to feel.
             </p>
           </Reveal>
         </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={f.photo}
-                      alt={`${f.name} — ${f.role}`}
+                      alt={`${f.name}, ${f.role}`}
                       className="h-16 w-16 shrink-0 rounded-2xl object-cover object-top ring-1 ring-slate-200"
                     />
                   ) : (

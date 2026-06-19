@@ -5,7 +5,7 @@ export const site = {
   description:
     "Tiqni builds reliable, scalable software for startups, SMEs, and enterprises. Senior engineers, modern practices, long-term partnership.",
   email: "hello@tiqni.com",
-  phone: "+61 — (placeholder)",
+  phone: "+61, (placeholder)",
   linkedin: "https://www.linkedin.com/company/tiqni",
 };
 
@@ -112,7 +112,7 @@ export const whyTiqni = [
   },
   {
     title: "Modern technologies",
-    body: "Current, well-supported tools — no legacy lock-in.",
+    body: "Current, well-supported tools, no legacy lock-in.",
   },
   {
     title: "Transparent communication",
@@ -140,7 +140,7 @@ export const processSteps = [
   {
     n: "02",
     title: "Planning",
-    body: "Scope, architecture, timeline, and estimate — in writing.",
+    body: "Scope, architecture, timeline, and estimate, in writing.",
   },
   {
     n: "03",
@@ -235,7 +235,7 @@ export const founders: Founder[] = [
     name: "Hamzeh Dweik",
     role: "Co-Founder & Client Relations Director",
     initials: "HD",
-    bio: "Hamzeh leads business development and client communication. He runs discovery, gathers requirements, prepares proposals, and manages accounts — the bridge between you and the engineering team, keeping every project aligned with your business goals.",
+    bio: "Hamzeh leads business development and client communication. He runs discovery, gathers requirements, prepares proposals, and manages accounts, the bridge between you and the engineering team, keeping every project aligned with your business goals.",
     skills: [
       "Business development",
       "Client communication",
@@ -251,11 +251,11 @@ export const founders: Founder[] = [
 export const homeFaq = [
   {
     q: "What does Tiqni do?",
-    a: "We design, build, and scale custom software — mobile, web, backend, and cloud.",
+    a: "We design, build, and scale custom software, mobile, web, backend, and cloud.",
   },
   {
     q: "Who do you work with?",
-    a: "Startups building MVPs, SMEs, and enterprises modernizing systems — in Australia and internationally.",
+    a: "Startups building MVPs, SMEs, and enterprises modernizing systems, in Australia and internationally.",
   },
   {
     q: "Can I see past projects?",
@@ -267,6 +267,6 @@ export const homeFaq = [
   },
   {
     q: "Do you support the software after launch?",
-    a: "Yes — long-term maintenance and support is core to how we work.",
+    a: "Yes, long-term maintenance and support is core to how we work.",
   },
 ];

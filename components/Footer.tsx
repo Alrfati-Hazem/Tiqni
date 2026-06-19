@@ -48,8 +48,8 @@ export function Footer() {
           <div className="max-w-xs">
             <Logo variant="dark" />
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              A software development and technology consultancy. Reliable, scalable software —
-              engineered by senior developers, delivered with transparency.
+              A software development and technology consultancy. Reliable, scalable software,
+              engineered by senior developers and delivered with transparency.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
