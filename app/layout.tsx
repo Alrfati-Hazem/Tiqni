@@ -44,7 +44,7 @@ const orgJsonLd = {
   sameAs: [site.linkedin],
   founder: [
     { "@type": "Person", name: "Hazem Alrfati", jobTitle: "Co-Founder & CTO" },
-    { "@type": "Person", name: "Hamzeh Dweik", jobTitle: "Co-Founder & Client Relations Director" },
+    { "@type": "Person", name: "Hamzah Aldweik", jobTitle: "Co-Founder & Client Relations Director" },
   ],
 };
 

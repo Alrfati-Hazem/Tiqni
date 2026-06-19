@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Target, Eye, Compass } from "lucide-react";
+import { Target, Eye, Compass, Linkedin } from "lucide-react";
 import { Section, SectionHead } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { ContactCta } from "../page";
@@ -137,6 +137,18 @@ export default function AboutPage() {
                     <p className="text-sm font-medium text-brand-600">
                       {f.role}
                     </p>
+                    {f.linkedin && (
+                      <a
+                        href={f.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${f.name} on LinkedIn`}
+                        className="mt-1.5 inline-flex items-center gap-1.5 text-sm text-slate-500 transition-colors hover:text-brand-600"
+                      >
+                        <Linkedin className="h-4 w-4" aria-hidden="true" />
+                        LinkedIn
+                      </a>
+                    )}
                   </div>
                 </div>
                 <p className="mt-5 leading-relaxed text-slate-600">{f.bio}</p>

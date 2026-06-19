@@ -5,7 +5,7 @@ export const site = {
   description:
     "Tiqni builds reliable, scalable software for startups, SMEs, and enterprises. Senior engineers, modern practices, long-term partnership.",
   email: "hello@tiqni.com",
-  phone: "+61, (placeholder)",
+  phone: "+61451034080",
   linkedin: "https://www.linkedin.com/company/tiqni",
 };
 
@@ -14,8 +14,72 @@ export const nav = [
   { label: "Industries", href: "/industries" },
   { label: "Technologies", href: "/technologies" },
   { label: "Process", href: "/process" },
+  { label: "Projects", href: "/projects" },
   { label: "About", href: "/about" },
   { label: "Insights", href: "/insights" },
+];
+
+export type Project = {
+  name: string;
+  category: string;
+  description: string;
+  stack: string[];
+  links?: { label: string; href: string }[];
+  stores?: { appStore?: string; playStore?: string };
+  featured?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    name: "Sanad Quran",
+    category: "Education",
+    description:
+      "Educational app delivering a focused Quran learning experience, clean reading flows, audio playback, and a structured curriculum architecture built for scale.",
+    stack: ["Flutter", "Bloc", "Clean Architecture", "Firebase"],
+    stores: {
+      appStore: "https://apps.apple.com/jo/app/sanad-quran/id6740745205",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.sanadquran.sanad",
+    },
+  },
+  {
+    name: "Fanoos",
+    category: "Delivery",
+    description:
+      "Multi-role delivery platform with live driver tracking, push notifications, deep linking into specific orders, and Twilio-powered communications.",
+    stack: ["Flutter", "Bloc", "WebSockets", "Twilio", "Live Location"],
+    stores: {
+      appStore: "https://apps.apple.com/jo/app/fanoos-driver/id6648777389",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.fanoos.fanoosapp",
+    },
+  },
+  {
+    name: "Blinx",
+    category: "Media",
+    description:
+      "Media-rich application with smooth video playback, chat interfaces, and uploads for images, documents, and video, optimized for performant playback at scale.",
+    stack: ["Flutter", "Bloc", "Video", "Chat", "Media Uploads"],
+    stores: {
+      appStore:
+        "https://apps.apple.com/jo/app/blinx-more-story-less-noise/id6444521208",
+      playStore: "https://play.google.com/store/apps/details?id=com.blinx.app",
+    },
+    featured: true,
+  },
+  {
+    name: "Olive",
+    category: "HR System",
+    description:
+      "Internal HR platform handling employee workflows: attendance, requests, approvals, and notifications. Modular, role-based, and built to evolve.",
+    stack: ["Flutter", "REST APIs", "Dio", "Firebase Auth"],
+    stores: {
+      appStore: "https://apps.apple.com/jo/app/olive-hr/id6752605410",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.optimumpartners.olive",
+    },
+    featured: true,
+  },
 ];
 
 export type Service = {
@@ -211,6 +275,7 @@ export type Founder = {
   bio: string;
   skills: string[];
   photo?: string;
+  linkedin?: string;
 };
 
 export const founders: Founder[] = [
@@ -232,10 +297,11 @@ export const founders: Founder[] = [
     ],
   },
   {
-    name: "Hamzeh Dweik",
+    name: "Hamzah Aldweik",
     role: "Co-Founder & Client Relations Director",
     initials: "HD",
-    bio: "Hamzeh leads business development and client communication. He runs discovery, gathers requirements, prepares proposals, and manages accounts, the bridge between you and the engineering team, keeping every project aligned with your business goals.",
+    linkedin: "https://www.linkedin.com/in/hamzah-aldweik-a2b363206/",
+    bio: "Hamzah leads business development and client communication. He runs discovery, gathers requirements, prepares proposals, and manages accounts, the bridge between you and the engineering team, keeping every project aligned with your business goals.",
     skills: [
       "Business development",
       "Client communication",

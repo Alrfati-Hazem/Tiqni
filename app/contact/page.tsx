@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-brand-600" aria-hidden="true" />
-                  <span className="text-slate-700">{site.phone}</span>
+                  <a href={`tel:${site.phone}`} className="text-slate-700 hover:text-brand-600">{site.phone}</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-brand-600" aria-hidden="true" />

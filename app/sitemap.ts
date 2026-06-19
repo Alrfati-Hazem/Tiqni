@@ -4,7 +4,7 @@ import { services, site } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "", "/about", "/services", "/industries", "/technologies", "/process",
-    "/why-tiqni", "/contact", "/insights", "/careers", "/faq", "/privacy", "/terms",
+    "/why-tiqni", "/projects", "/contact", "/insights", "/careers", "/faq", "/privacy", "/terms",
   ].map((path) => ({
     url: `${site.domain}${path}`,
     changeFrequency: "monthly" as const,
