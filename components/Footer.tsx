@@ -53,10 +53,10 @@ export function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
-                href={site.linkedin}
+                href="https://www.linkedin.com/in/hamzah-aldweik-a2b363206/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Tiqni on LinkedIn"
+                aria-label="LinkedIn"
                 className="grid h-10 w-10 place-items-center rounded-xl border border-ink-700 transition-colors hover:border-brand-500 hover:text-white"
               >
                 <Linkedin className="h-5 w-5" />
