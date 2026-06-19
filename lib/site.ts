@@ -219,7 +219,7 @@ export const founders: Founder[] = [
     role: "Co-Founder & Chief Technology Officer (CTO)",
     initials: "HA",
     photo: "/founders/hazem.jpg",
-    bio: "Senior Software Engineer with deep experience designing and building scalable software across mobile, web, and backend. Hazem leads all technical decisions at Tiqni, making sure every solution is secure, maintainable, scalable, and built for the long term.",
+    bio: "Hazem brings deep experience designing and building scalable software across mobile, web, and backend. He leads all technical decisions at Tiqni, making sure every solution is secure, maintainable, scalable, and built for the long term.",
     skills: [
       "Flutter",
       "Cross-platform mobile",
