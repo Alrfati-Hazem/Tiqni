@@ -64,8 +64,8 @@ export default function AboutPage() {
             { icon: Compass, title: "Our approach", body: "Understand the business first. Scope clearly in writing. Build in increments you can test. Write code our future selves would thank us for. And stay." },
           ].map((b, i) => (
             <Reveal key={b.title} delay={i * 80}>
-              <div className="card h-full">
-                <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
+              <div className="card card-hover h-full">
+                <span className="badge grid h-11 w-11 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
                   <b.icon className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">{b.title}</h3>
@@ -99,9 +99,18 @@ export default function AboutPage() {
             <Reveal key={f.name} delay={i * 100}>
               <div className="card h-full">
                 <div className="flex items-center gap-4">
-                  <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-brand-gradient font-display text-xl font-semibold text-white">
-                    {f.initials}
-                  </span>
+                  {f.photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={f.photo}
+                      alt={`${f.name} — ${f.role}`}
+                      className="h-16 w-16 shrink-0 rounded-2xl object-cover object-top ring-1 ring-slate-200"
+                    />
+                  ) : (
+                    <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-brand-gradient font-display text-xl font-semibold text-white">
+                      {f.initials}
+                    </span>
+                  )}
                   <div>
                     <h3 className="font-display text-lg font-semibold text-slate-900">{f.name}</h3>
                     <p className="text-sm font-medium text-brand-600">{f.role}</p>

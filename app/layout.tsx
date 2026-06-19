@@ -3,6 +3,7 @@ import "./globals.css";
 import { inter, sora, jetbrainsMono } from "@/lib/fonts";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <ScrollProgress />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />

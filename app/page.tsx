@@ -2,6 +2,8 @@ import Link from "next/link";
 import {
   Smartphone, Globe, Server, Cloud, Palette, Lightbulb, Wrench, Sparkles,
   ShieldCheck, Eye, Layers, CheckCircle2, ArrowRight,
+  HeartPulse, Truck, GraduationCap, Landmark, ShoppingCart,
+  UtensilsCrossed, Users, Building2, HardHat, Home as HomeIcon,
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Section, SectionHead } from "@/components/Section";
@@ -19,6 +21,19 @@ const serviceIcons: Record<string, React.ElementType> = {
   "technical-consulting": Lightbulb,
   "maintenance-support": Wrench,
   "ai-solutions": Sparkles,
+};
+
+const industryIcons: Record<string, React.ElementType> = {
+  Healthcare: HeartPulse,
+  Logistics: Truck,
+  Education: GraduationCap,
+  Finance: Landmark,
+  "E-commerce": ShoppingCart,
+  Hospitality: UtensilsCrossed,
+  "Human Resources": Users,
+  Government: Building2,
+  Construction: HardHat,
+  "Real Estate": HomeIcon,
 };
 
 const pillars = [
@@ -52,7 +67,7 @@ export default function HomePage() {
             </p>
             <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-white animate-fade-up sm:text-6xl">
               Software built with{" "}
-              <span className="bg-brand-gradient bg-clip-text text-transparent">certainty.</span>
+              <span className="animate-gradient-x bg-brand-gradient bg-clip-text text-transparent">certainty.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up sm:text-xl">
               Tiqni helps startups, SMEs, and enterprises design, build, and scale digital
@@ -86,7 +101,7 @@ export default function HomePage() {
             {pillars.map((p, i) => (
               <Reveal key={p.title} delay={i * 80}>
                 <div className="card card-hover flex items-start gap-4">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
+                  <span className="badge grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
                     <p.icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <div>
@@ -116,7 +131,7 @@ export default function HomePage() {
                   href={`/services/${s.slug}`}
                   className="card card-hover group flex h-full flex-col"
                 >
-                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
+                  <span className="badge grid h-11 w-11 place-items-center rounded-xl bg-brand-600/10 text-brand-600">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <h3 className="mt-4 flex items-center gap-2 font-display text-base font-semibold text-slate-900">
@@ -128,6 +143,10 @@ export default function HomePage() {
                     )}
                   </h3>
                   <p className="mt-2 flex-1 text-sm text-slate-500">{s.short}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand-600 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                    Learn more
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </span>
                 </Link>
               </Reveal>
             );
@@ -219,14 +238,32 @@ export default function HomePage() {
           eyebrow="Industries"
           title="Experience across the sectors that run on software."
         />
-        <div className="mt-10 flex flex-wrap gap-3">
-          {industries.map((ind, i) => (
-            <Reveal key={ind} delay={(i % 5) * 40}>
-              <span className="inline-flex rounded-full border border-slate-200 bg-paper px-4 py-2 text-sm font-medium text-slate-700 shadow-soft">
-                {ind}
-              </span>
-            </Reveal>
-          ))}
+        <div className="marquee mt-12 overflow-x-clip py-2">
+          <ul className="marquee-track flex w-max gap-4">
+            {[...industries, ...industries].map((ind, i) => {
+              const Icon = industryIcons[ind] ?? Building2;
+              return (
+                <li
+                  key={`${ind}-${i}`}
+                  aria-hidden={i >= industries.length}
+                  className="group inline-flex shrink-0 items-center gap-2.5 rounded-full border border-slate-200 bg-paper py-2.5 pl-3 pr-5 shadow-soft transition-colors hover:border-brand-500/50"
+                >
+                  <span className="grid h-8 w-8 place-items-center rounded-full bg-brand-600/10 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                    <Icon className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                  <span className="text-sm font-medium text-slate-700 transition-colors group-hover:text-brand-700">
+                    {ind}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="mt-8">
+          <Link href="/industries" className="group inline-flex items-center gap-2 font-medium text-brand-600 hover:text-brand-700">
+            Explore industries
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
       </Section>
 

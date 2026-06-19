@@ -4,11 +4,11 @@ import { ArrowRight } from "lucide-react";
 type Variant = "primary" | "secondary" | "ghost" | "link";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-xl font-medium transition duration-200 focus-visible:outline-none disabled:opacity-60";
+  "group inline-flex items-center justify-center gap-2 rounded-xl font-medium transition duration-200 focus-visible:outline-none disabled:opacity-60";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-brand-600 px-5 py-3 text-white hover:bg-brand-700 hover:-translate-y-0.5 shadow-soft hover:shadow-lift",
+    "btn-sheen bg-brand-600 px-5 py-3 text-white hover:bg-brand-700 hover:-translate-y-0.5 shadow-soft hover:shadow-lift",
   secondary:
     "border border-slate-300 bg-paper px-5 py-3 text-slate-900 hover:border-brand-500 hover:text-brand-700",
   ghost:

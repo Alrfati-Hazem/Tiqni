@@ -51,7 +51,7 @@ export default function ServicesPage() {
             return (
               <Reveal key={s.slug} delay={(i % 3) * 60}>
                 <div className="card card-hover grid gap-6 sm:grid-cols-[auto_1fr_auto] sm:items-center">
-                  <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-600/10 text-brand-600">
+                  <span className="badge grid h-14 w-14 place-items-center rounded-2xl bg-brand-600/10 text-brand-600">
                     <Icon className="h-6 w-6" aria-hidden="true" />
                   </span>
                   <div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
@@ -10,6 +11,9 @@ import { nav } from "@/lib/site";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -39,7 +43,8 @@ export function Navbar() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-brand-700"
+                data-active={isActive(item.href)}
+                className="nav-link text-sm font-medium text-slate-600 transition-colors hover:text-brand-700"
               >
                 {item.label}
               </Link>
@@ -70,7 +75,9 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-3 text-base font-medium text-slate-700 hover:bg-mist"
+                  className={`block rounded-lg px-3 py-3 text-base font-medium hover:bg-mist ${
+                    isActive(item.href) ? "bg-mist text-brand-700" : "text-slate-700"
+                  }`}
                 >
                   {item.label}
                 </Link>
